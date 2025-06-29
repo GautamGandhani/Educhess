@@ -1740,6 +1740,8 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 var vite_config_default = defineConfig({
+  base: "/Educhess/",
+  // ✅ IMPORTANT: This fixes the 404 issue on GitHub Pages
   plugins: [
     react(),
     runtimeErrorOverlay(),
