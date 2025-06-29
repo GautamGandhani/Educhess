@@ -17,13 +17,13 @@ import RedirectHandler from "./RedirectHandler"; // adjust path if needed
 function Router() {
   return (
     <Switch>
-      <Route path="/" component={Home} />
-      <Route path="/games" component={GamesDatabase} />
-      <Route path="/profile" component={PlayerProfile} />
-      <Route path="/scout" component={OpponentScout} />
-      <Route path="/opponent-scout" component={OpponentScout} />
-      <Route path="/learn" component={LearnChess} />
-      <Route path="/account" component={Account} />
+      <Route path="/Educhess/" component={Home} />
+<Route path="/Educhess/games" component={GamesDatabase} />
+<Route path="/Educhess/profile" component={PlayerProfile} />
+<Route path="/Educhess/scout" component={OpponentScout} />
+<Route path="/Educhess/opponent-scout" component={OpponentScout} />
+<Route path="/Educhess/learn" component={LearnChess} />
+<Route path="/Educhess/account" component={Account} />
       <Route component={NotFound} />
     </Switch>
   );

@@ -8,17 +8,17 @@ export function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { href: "/", label: "Home", icon: Crown },
-    { href: "/games", label: "Games DB", icon: Database },
-    { href: "/scout", label: "Opponent Scout", icon: Search },
-    { href: "/learn", label: "Learn Chess", icon: GraduationCap },
-    { href: "/account", label: "Account", icon: User },
-  ];
-
+  { href: "/Educhess/", label: "Home", icon: Crown },
+  { href: "/Educhess/games", label: "Games DB", icon: Database },
+  { href: "/Educhess/scout", label: "Opponent Scout", icon: Search },
+  { href: "/Educhess/learn", label: "Learn Chess", icon: GraduationCap },
+  { href: "/Educhess/account", label: "Account", icon: User },
+];
   const isActive = (href: string) => {
-    if (href === "/") return location === "/";
-    return location.startsWith(href);
-  };
+  if (href === "/Educhess/") return location === "/Educhess/";
+  return location.startsWith(href);
+};
+
 
   return (
     <header className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
@@ -26,10 +26,11 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo and Brand */}
           <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-2">
-              <Crown className="text-chess-dark text-2xl" />
-              <span className="text-xl font-bold text-gray-900">ChessMaster Pro</span>
-            </Link>
+           <Link href="/Educhess/" className="flex items-center space-x-2">
+  <Crown className="text-chess-dark text-2xl" />
+  <span className="text-xl font-bold text-gray-900">ChessMaster Pro</span>
+</Link>
+
           </div>
 
           {/* Desktop Navigation */}
