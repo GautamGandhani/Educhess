@@ -11,6 +11,8 @@ import LearnChess from "@/pages/LearnChess";
 import Account from "@/pages/Account";
 import OpponentScout from "@/pages/OpponentScout";
 import NotFound from "@/pages/not-found";
+import RedirectHandler from "./RedirectHandler"; // adjust path if needed
+
 
 function Router() {
   return (
@@ -31,6 +33,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
+         <RedirectHandler /> {/* 🛠 Handles refresh redirects */}
         <div className="min-h-screen bg-gray-50">
           <Navigation />
           <Router />
